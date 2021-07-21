@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Rackspace </title>
+  </head>
+  <body>
+
+  	<br><br>
+	<center>
+	<div style="width:30%">
+	<fieldset>
+
+      <br><br>
+      <img src="{{ url_for('static', filename='images/dospot.png') }}" alt="DO-Spot Co." height="100" width="100">
+      <h1> Welcome to MyApp </h1> <br>
+      <a href="{{url_for("maintenance")}}">Signup</a>
+	    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="{{ url_for("login") }}">Login</a>
+      <br><br>
+
+    </fieldset>
+	</div>
+	</center>
+
+  </body>
+</html>
