@@ -1,8 +1,8 @@
-# Authentication Specific Variables
-variable "azure_subscription_id" {}
-variable "azure_client_id" {}
-variable "azure_client_secret" {}
-variable "azure_tenant_id" {}
+# # Authentication Specific Variables
+# variable "azure_subscription_id" {}
+# variable "azure_client_id" {}
+# variable "azure_client_secret" {}
+# variable "azure_tenant_id" {}
 
 # Variable Declaration - RG, Location
 variable "rg_name" {
