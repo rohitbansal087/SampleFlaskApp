@@ -1,0 +1,10 @@
+# Configure Terraform Backend for Azure Provider
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "I-Day"
+    storage_account_name = "idaysa01"
+    container_name       = "iday-tfstates"
+    key                  = "dev.terraform.tfstate"
+  }
+}
