@@ -7,6 +7,7 @@ variable "azure_tenant_id" {}
 # Variable Declaration - RG, Location
 variable "rg_name" {
   description = "Azure Resouce Group Name"
+  default     = "UKS-DEV-IDAY-RG"
 }
 
 variable "location" {
@@ -17,14 +18,22 @@ variable "location" {
 variable "rs_tags" {
   description = "Azure Resource Tags"
   default = {
-    "Project"     = "FC"
-    "Environment" = "TST"
+    "Project"     = "IDAY"
+    "Environment" = "DEV"
   }
 }
 
 # Variable Declaration - PaaS Resources
-variable "asp_name" {}
-variable "asp_tier" {}
-variable "asp_size" {}
-variable "appservice_name" {}
+variable "asp_name" {
+  default     = "IDAY-ASP-01"
+}
+variable "asp_tier" {
+  default     = "Standard"
+}
+variable "asp_size" {
+  default     = "S1"
+}
+variable "appservice_name" {
+  default     = "IDAY-WEBAPP-01"
+}
 
